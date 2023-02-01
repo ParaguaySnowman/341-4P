@@ -1,12 +1,8 @@
 //Node Modules
 const express = require('express');
-
-//Controllers
-const contactsController = require('../controllers/contacts');
-
-const express = require('express');
 const router = express.Router();
 
+//Controllers
 const contactsController = require('../controllers/contacts');
 
 router.get('/', contactsController.getAll);
